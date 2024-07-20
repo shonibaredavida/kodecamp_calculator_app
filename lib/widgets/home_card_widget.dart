@@ -1,19 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:kodecamp_calculator_app/utils/constants/calculator_feature.dart';
 import 'package:kodecamp_calculator_app/utils/constants/colors.dart';
 import 'package:kodecamp_calculator_app/utils/constants/sizes.dart';
 
 class HomeCardWidget extends StatelessWidget {
   const HomeCardWidget({
     super.key,
-    required this.calcFunctionPix,
+    required this.index,
+    /*  required this.calcFunctionPix,
     required this.calcFuntionTitle,
+  */
   });
-
-  final String calcFunctionPix;
+  final int index;
+  /*  final String calcFunctionPix;
   final String calcFuntionTitle;
-
+ */
   @override
   Widget build(BuildContext context) {
+    final calculatorDetails = calculatorFeature[index];
     return Padding(
       padding: const EdgeInsets.all(5.0),
       child: Card(
@@ -29,7 +33,7 @@ class HomeCardWidget extends StatelessWidget {
                 height: 5,
               ),
               Image.asset(
-                calcFunctionPix,
+                calculatorDetails.pix,
                 height: 30,
               ),
               const SizedBox(
@@ -38,16 +42,22 @@ class HomeCardWidget extends StatelessWidget {
               Column(
                 children: [
                   Text(
-                    calcFuntionTitle,
+                    calculatorDetails.shortName ?? calculatorDetails.name,
                     overflow: TextOverflow.visible,
                     textAlign: TextAlign.center,
-                    style: const TextStyle(fontSize: AppSizes.fontSizeMd),
+                    style: TextStyle(
+                        fontSize: calculatorDetails.shortName != null
+                            ? AppSizes.fontSizeSm
+                            : AppSizes.fontSizeMs),
                   ),
-                  const Text(
+                  Text(
                     "Calculator",
                     overflow: TextOverflow.visible,
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: AppSizes.fontSizeMd),
+                    style: TextStyle(
+                        fontSize: calculatorDetails.shortName != null
+                            ? AppSizes.fontSizeSm
+                            : AppSizes.fontSizeMs),
                   ),
                 ],
               ),

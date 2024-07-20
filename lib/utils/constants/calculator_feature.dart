@@ -32,12 +32,6 @@ List<CalculatorFunction> calculatorFeature = <CalculatorFunction>[
       name: "SIP",
       pix: AppImages.sip,
       functionPage: const SoonToCome(
-        index: 6,
-      )),
-  CalculatorFunction(
-      name: "EMI",
-      pix: AppImages.emi,
-      functionPage: const SoonToCome(
         index: 4,
       )),
   CalculatorFunction(
@@ -53,28 +47,36 @@ List<CalculatorFunction> calculatorFeature = <CalculatorFunction>[
         index: 6,
       )),
   CalculatorFunction(
-      name: "EMI",
-      pix: AppImages.emi,
+      name: "Income Tax",
+      pix: AppImages.tax,
       functionPage: const SoonToCome(
         index: 7,
       )),
   CalculatorFunction(
-      name: "EMI",
-      pix: AppImages.emi,
+      name: "PPF",
+      pix: AppImages.ppf,
       functionPage: const SoonToCome(
         index: 8,
       )),
   CalculatorFunction(
-      name: "EMI",
-      pix: AppImages.emi,
+      name: "GST",
+      pix: AppImages.gst,
       functionPage: const SoonToCome(
         index: 9,
       )),
   CalculatorFunction(
-      name: "EMI",
-      pix: AppImages.emi,
+      name: "Mutual Funds Returns",
+      shortName: "Mutual Funds",
+      pix: AppImages.mutual,
       functionPage: const SoonToCome(
         index: 10,
+      )),
+  CalculatorFunction(
+      name: "Sukanya Samariddhi Yojana",
+      shortName: "Sukanya \nSamariddhi",
+      pix: AppImages.suka,
+      functionPage: const SoonToCome(
+        index: 11,
       )),
 ];
 

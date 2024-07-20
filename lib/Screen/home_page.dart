@@ -63,10 +63,8 @@ class HompageScreen extends StatelessWidget {
                         Get.to(() => calculatorFeature[index].functionPage);
                       },
                       child: HomeCardWidget(
-                          calcFunctionPix: calculatorFeature[index].pix,
-                          calcFuntionTitle:
-                              calculatorFeature[index].shortName ??
-                                  calculatorFeature[index].name),
+                        index: index,
+                      ),
                     );
                   },
                 )
