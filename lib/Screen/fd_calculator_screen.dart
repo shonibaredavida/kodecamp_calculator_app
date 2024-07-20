@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:kodecamp_calculator_app/function/calculator_function.dart';
 import 'package:kodecamp_calculator_app/controllers/fd_calculator_controller.dart';
 import 'package:kodecamp_calculator_app/utils/constants/colors.dart';
 import 'package:kodecamp_calculator_app/utils/constants/sizes.dart';
@@ -275,7 +276,8 @@ class FDCalculatorScreen extends StatelessWidget {
                                     CalcButton(
                                       title: "Show Answer",
                                       link: () {
-                                        showResult(controller);
+                                        showResult(
+                                            "Monthly EMI:  ${toCurrency(controller.amtInvested)}");
                                       },
                                     )
                                   ],
@@ -290,25 +292,6 @@ class FDCalculatorScreen extends StatelessWidget {
                 ),
               )
             ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  SnackbarController showResult(FDCalculatorController controller) {
-    return Get.showSnackbar(
-      GetSnackBar(
-        duration: const Duration(seconds: 3),
-        messageText: Padding(
-          padding: const EdgeInsets.all(20.0),
-          child: Text(
-            "Monthly EMI:  ${toCurrency(controller.amtInvested)}",
-            textAlign: TextAlign.center,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: AppSizes.fontSizeLg,
-            ),
           ),
         ),
       ),
