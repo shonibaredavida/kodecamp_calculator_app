@@ -206,7 +206,7 @@ class FDCalculatorScreen extends StatelessWidget {
                                     Text(
                                       toCurrency(controller.amtInvested)
                                           .toString(),
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           fontSize: AppSizes.fontSizeMd),
                                     ),
                                   ],
@@ -228,7 +228,7 @@ class FDCalculatorScreen extends StatelessWidget {
                                     Text(
                                       toCurrency(controller.estReturn)
                                           .toString(),
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           fontSize: AppSizes.fontSizeMd),
                                     ),
                                   ],
@@ -250,7 +250,7 @@ class FDCalculatorScreen extends StatelessWidget {
                                     Text(
                                       toCurrency(controller.totalAmount)
                                           .toString(),
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           fontSize: AppSizes.fontSizeMd),
                                     ),
                                   ],

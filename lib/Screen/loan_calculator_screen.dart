@@ -204,7 +204,7 @@ class LoanCalculatorScreen extends StatelessWidget {
                                     ),
                                     Text(
                                       toCurrency(controller.monthlyPayment),
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           fontSize: AppSizes.fontSizeMd),
                                     ),
                                   ],
@@ -225,7 +225,7 @@ class LoanCalculatorScreen extends StatelessWidget {
                                     ),
                                     Text(
                                       toCurrency(controller.loanAmt),
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           fontSize: AppSizes.fontSizeMd),
                                     ),
                                   ],
@@ -264,7 +264,7 @@ class LoanCalculatorScreen extends StatelessWidget {
                                     ),
                                     Text(
                                       toCurrency(controller.totalAmount),
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           fontSize: AppSizes.fontSizeMd),
                                     ),
                                   ],

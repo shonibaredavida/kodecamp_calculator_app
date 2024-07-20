@@ -17,7 +17,7 @@ class SoonToCome extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              LogoWidget(),
+              const LogoWidget(),
               Text(
                 "$name Calculator",
                 textAlign: TextAlign.left,
@@ -30,9 +30,11 @@ class SoonToCome extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text(
-                      "Calculator is Currently Unavailable",
-                      style: TextStyle(fontSize: AppSizes.fontSizeLg),
+                    Text(
+                      "$name Calculator\n \nis Currently Unavailable",
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                          fontSize: AppSizes.fontSizeLg, color: Colors.black54),
                     ),
                     const SizedBox(height: AppSizes.defaultSpace),
                     TextButton(
