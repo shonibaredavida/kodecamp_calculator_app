@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kodecamp_calculator_app/utils/constants/calculator_feature.dart';
 import 'package:kodecamp_calculator_app/utils/constants/sizes.dart';
+import 'package:kodecamp_calculator_app/widgets/logo_widget.dart';
 
 class SoonToCome extends StatelessWidget {
   const SoonToCome({super.key, required this.index});
@@ -16,13 +17,7 @@ class SoonToCome extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const Text(
-                "KCalc",
-                style: TextStyle(fontSize: AppSizes.fontSizeLg),
-              ),
-              const SizedBox(
-                height: AppSizes.spaceBtwSectionsSm,
-              ),
+              LogoWidget(),
               Text(
                 "$name Calculator",
                 textAlign: TextAlign.left,
