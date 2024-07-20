@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:kodecamp_calculator_app/Screen/splash_screen.dart';
+import 'package:kodecamp_calculator_app/Screen/home_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
       /*    home: HomePageScreen(
           username: "",
         ) */
-      home: const SplashScreen(),
+      //   home: const SplashScreen(),
+      home: const HompageScreen(),
     );
   }
 }

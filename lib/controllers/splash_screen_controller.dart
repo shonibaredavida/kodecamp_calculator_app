@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:kodecamp_calculator_app/Screen/home_page.dart';
 
 class SplashScreenController extends GetxController {
   @override
@@ -11,7 +12,7 @@ class SplashScreenController extends GetxController {
     Future.delayed(
       const Duration(seconds: 3),
       () {
-        //  Get.off(const LandingPageScreen());
+        Get.off(const HompageScreen());
       },
     );
   }

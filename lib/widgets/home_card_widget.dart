@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:kodecamp_calculator_app/utils/constants/colors.dart';
+import 'package:kodecamp_calculator_app/utils/constants/sizes.dart';
 
 class HomeCardWidget extends StatelessWidget {
   const HomeCardWidget({
@@ -12,26 +14,42 @@ class HomeCardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Container(
-        margin: const EdgeInsets.all(10),
-        child: Card(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
-          elevation: 5,
+    return Padding(
+      padding: const EdgeInsets.all(5.0),
+      child: Card(
+        color: gridItemColor.withOpacity(1),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text(
+              const SizedBox(
+                height: 5,
+              ),
+              Image.asset(
                 calcFunctionPix,
+                height: 30,
               ),
               const SizedBox(
                 height: 10,
               ),
-              Text(
-                calcFuntionTitle,
-                style: const TextStyle(fontSize: 20),
+              Column(
+                children: [
+                  Text(
+                    calcFuntionTitle,
+                    overflow: TextOverflow.visible,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(fontSize: AppSizes.fontSizeMd),
+                  ),
+                  const Text(
+                    "Calculator",
+                    overflow: TextOverflow.visible,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: AppSizes.fontSizeMd),
+                  ),
+                ],
               ),
             ],
           ),
