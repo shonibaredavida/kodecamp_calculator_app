@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:kodecamp_calculator_app/function/calculator_function.dart';
 import 'package:kodecamp_calculator_app/controllers/cel_to_fah_calculator_controller.dart';
 import 'package:kodecamp_calculator_app/utils/constants/colors.dart';
 import 'package:kodecamp_calculator_app/utils/constants/sizes.dart';
@@ -155,7 +156,8 @@ class CelFahCalculatorScreen extends StatelessWidget {
                                     CalcButton(
                                       title: "Show Answer",
                                       link: () {
-                                        showResult(controller);
+                                        showResult(
+                                            "Celsius Value is  ${controller.fahrenheit} F");
                                       },
                                     )
                                   ],
@@ -170,25 +172,6 @@ class CelFahCalculatorScreen extends StatelessWidget {
                 ),
               )
             ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  SnackbarController showResult(CelsiusToFahrenheitController controller) {
-    return Get.showSnackbar(
-      GetSnackBar(
-        duration: const Duration(seconds: 3),
-        messageText: Padding(
-          padding: const EdgeInsets.all(20.0),
-          child: Text(
-            "Celsius Value is  ${controller.fahrenheit} F",
-            textAlign: TextAlign.center,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: AppSizes.fontSizeLg,
-            ),
           ),
         ),
       ),
