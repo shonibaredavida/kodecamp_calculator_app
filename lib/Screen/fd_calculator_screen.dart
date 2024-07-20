@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:kodecamp_calculator_app/controllers/calculator_func_controller.dart';
+import 'package:kodecamp_calculator_app/controllers/fd_calculator_controller.dart';
 import 'package:kodecamp_calculator_app/utils/constants/colors.dart';
 import 'package:kodecamp_calculator_app/utils/constants/sizes.dart';
 import 'package:kodecamp_calculator_app/widgets/calc_button_widget.dart';
