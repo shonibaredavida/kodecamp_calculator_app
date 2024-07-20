@@ -18,13 +18,14 @@ class SplashScreen extends StatelessWidget {
           children: [
             Image.asset(
               AppImages.splashImage,
-              height: 200,
+              height: 150,
             ),
             const Text(
               appName,
               style: TextStyle(
                   fontSize: 2 * AppSizes.fontSizeMd,
-                  fontWeight: FontWeight.bold),
+                  fontWeight: FontWeight.bold,
+                  wordSpacing: 0.5),
             ),
             const SizedBox(
               height: AppSizes.spaceBtwSectionsSm,

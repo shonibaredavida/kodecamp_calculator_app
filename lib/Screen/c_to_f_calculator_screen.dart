@@ -48,7 +48,7 @@ class CelFahCalculatorScreen extends StatelessWidget {
                                 color: gridItemColor,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 10, vertical: 5),
-                                width: 150,
+                                width: 100,
                                 child: Obx(
                                   () => Text(
                                     "${controller.celsiusValue} ºC",
@@ -98,8 +98,16 @@ class CelFahCalculatorScreen extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Text("Fahrenheit Value"),
-                                    Text("${controller.fahrenheit} F"),
+                                    const Text(
+                                      "Fahrenheit Value",
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
+                                    Text(
+                                      "${controller.fahrenheit} F",
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
                                   ],
                                 ),
                                 const SizedBox(
@@ -111,8 +119,16 @@ class CelFahCalculatorScreen extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Text("Celsius Value"),
-                                    Text("${controller.celsiusValue} ºC"),
+                                    const Text(
+                                      "Celsius Value",
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
+                                    Text(
+                                      "${controller.celsiusValue} ºC",
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
                                   ],
                                 ),
                                 const SizedBox(
