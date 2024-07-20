@@ -41,8 +41,8 @@ List<CalculatorFunction> calculatorFeature = <CalculatorFunction>[
         index: 5,
       )),
   CalculatorFunction(
-      name: "EMI",
-      pix: AppImages.emi,
+      name: "Lumpsum",
+      pix: AppImages.lumpsum,
       functionPage: const SoonToCome(
         index: 6,
       )),

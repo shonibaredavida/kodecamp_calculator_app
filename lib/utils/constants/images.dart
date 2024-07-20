@@ -15,4 +15,5 @@ class AppImages {
   static const String suka = "assets/images/suka.png";
   static const String tax = "assets/images/tax.png";
   static const String logo = "assets/images/logo2.png";
+  static const String lumpsum = "assets/images/lumpsum.png";
 }
