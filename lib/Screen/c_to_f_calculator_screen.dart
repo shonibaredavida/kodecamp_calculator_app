@@ -105,7 +105,7 @@ class CelFahCalculatorScreen extends StatelessWidget {
                                     ),
                                     Text(
                                       "${controller.fahrenheit} F",
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           fontSize: AppSizes.fontSizeMd),
                                     ),
                                   ],
@@ -126,7 +126,7 @@ class CelFahCalculatorScreen extends StatelessWidget {
                                     ),
                                     Text(
                                       "${controller.celsiusValue} ºC",
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           fontSize: AppSizes.fontSizeMd),
                                     ),
                                   ],

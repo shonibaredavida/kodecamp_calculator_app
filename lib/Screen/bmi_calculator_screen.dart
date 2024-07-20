@@ -152,7 +152,7 @@ class BMICalculatorScreen extends StatelessWidget {
                                             fontSize: AppSizes.fontSizeMd)),
                                     Text(
                                       "${controller.bmi} kg/m²",
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           fontSize: AppSizes.fontSizeMd),
                                     ),
                                   ],
@@ -173,7 +173,7 @@ class BMICalculatorScreen extends StatelessWidget {
                                     ),
                                     Text(
                                       "${controller.heightString} m  ",
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           fontSize: AppSizes.fontSizeMd),
                                     ),
                                   ],
@@ -193,7 +193,7 @@ class BMICalculatorScreen extends StatelessWidget {
                                     ),
                                     Text(
                                       "${controller.weight} kg  ",
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           fontSize: AppSizes.fontSizeMd),
                                     ),
                                   ],
