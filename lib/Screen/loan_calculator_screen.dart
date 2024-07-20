@@ -50,10 +50,10 @@ class LoanCalculatorScreen extends StatelessWidget {
                                 color: gridItemColor,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 10, vertical: 5),
-                                width: 150,
+                                width: 120,
                                 child: Obx(
                                   () => Text(
-                                    "\$ ${controller.loanAmt} ",
+                                    "\$  ${controller.loanAmt} ",
                                     style: TextStyle(
                                         color: primary,
                                         fontSize: AppSizes.fontSizeMd,
@@ -99,7 +99,7 @@ class LoanCalculatorScreen extends StatelessWidget {
                                 color: gridItemColor,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 10, vertical: 5),
-                                width: 150,
+                                width: 120,
                                 child: Obx(
                                   () => Text(
                                     "${controller.rate} %",
@@ -148,7 +148,7 @@ class LoanCalculatorScreen extends StatelessWidget {
                                 color: gridItemColor,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 10, vertical: 5),
-                                width: 150,
+                                width: 120,
                                 child: Obx(
                                   () => Text(
                                     "${controller.period} Yr",
@@ -197,8 +197,16 @@ class LoanCalculatorScreen extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Text("Monthly EMI"),
-                                    Text(toCurrency(controller.monthlyPayment)),
+                                    const Text(
+                                      "Monthly EMI",
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
+                                    Text(
+                                      toCurrency(controller.monthlyPayment),
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
                                   ],
                                 ),
                                 const SizedBox(
@@ -210,8 +218,16 @@ class LoanCalculatorScreen extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Text("Principal Amount"),
-                                    Text(toCurrency(controller.loanAmt)),
+                                    const Text(
+                                      "Principal Amount",
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
+                                    Text(
+                                      toCurrency(controller.loanAmt),
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
                                   ],
                                 ),
                                 const SizedBox(
@@ -222,8 +238,16 @@ class LoanCalculatorScreen extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Text("Total Interest"),
-                                    Text(toCurrency(controller.totalInterest)),
+                                    const Text(
+                                      "Total Interest",
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
+                                    Text(
+                                      toCurrency(controller.totalInterest),
+                                      style: const TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
                                   ],
                                 ), //Total Amount
                                 const SizedBox(
@@ -233,8 +257,16 @@ class LoanCalculatorScreen extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Text("Total Amount"),
-                                    Text(toCurrency(controller.totalAmount)),
+                                    const Text(
+                                      "Total Amount",
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
+                                    Text(
+                                      toCurrency(controller.totalAmount),
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
                                   ],
                                 ),
                                 const SizedBox(

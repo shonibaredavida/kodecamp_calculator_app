@@ -51,7 +51,7 @@ class FDCalculatorScreen extends StatelessWidget {
                                 color: gridItemColor,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 10, vertical: 5),
-                                width: 150,
+                                width: 120,
                                 child: Obx(
                                   () => Text(
                                     "\$ ${controller.amtInvested} ",
@@ -100,7 +100,7 @@ class FDCalculatorScreen extends StatelessWidget {
                                 color: gridItemColor,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 10, vertical: 5),
-                                width: 150,
+                                width: 120,
                                 child: Obx(
                                   () => Text(
                                     "${controller.rate} %",
@@ -149,7 +149,7 @@ class FDCalculatorScreen extends StatelessWidget {
                                 color: gridItemColor,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 10, vertical: 5),
-                                width: 150,
+                                width: 120,
                                 child: Obx(
                                   () => Text(
                                     "${controller.period} Yr",
@@ -198,9 +198,17 @@ class FDCalculatorScreen extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Text("Invested Amount"),
-                                    Text(toCurrency(controller.amtInvested)
-                                        .toString()),
+                                    const Text(
+                                      "Invested Amount",
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
+                                    Text(
+                                      toCurrency(controller.amtInvested)
+                                          .toString(),
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
                                   ],
                                 ),
                                 const SizedBox(
@@ -212,9 +220,17 @@ class FDCalculatorScreen extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Text("Est. Returns"),
-                                    Text(toCurrency(controller.estReturn)
-                                        .toString()),
+                                    const Text(
+                                      "Est. Returns",
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
+                                    Text(
+                                      toCurrency(controller.estReturn)
+                                          .toString(),
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
                                   ],
                                 ),
                                 const SizedBox(
@@ -226,9 +242,17 @@ class FDCalculatorScreen extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Text("Total Value"),
-                                    Text(toCurrency(controller.totalAmount)
-                                        .toString()),
+                                    const Text(
+                                      "Total Value",
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
+                                    Text(
+                                      toCurrency(controller.totalAmount)
+                                          .toString(),
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
                                   ],
                                 ),
                                 const SizedBox(

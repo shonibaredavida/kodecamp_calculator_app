@@ -31,8 +31,8 @@ class BMICalculatorScreen extends StatelessWidget {
                     fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 30),
-              SingleChildScrollView(
-                child: Expanded(
+              Expanded(
+                child: SingleChildScrollView(
                   child: Column(
                     children: [
                       //first entry
@@ -49,7 +49,7 @@ class BMICalculatorScreen extends StatelessWidget {
                                 color: gridItemColor,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 10, vertical: 5),
-                                width: 150,
+                                width: 110,
                                 child: Obx(
                                   () => Text(
                                     "${controller.weight} kg",
@@ -98,7 +98,7 @@ class BMICalculatorScreen extends StatelessWidget {
                                 color: gridItemColor,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 10, vertical: 5),
-                                width: 150,
+                                width: 110,
                                 child: Obx(
                                   () => Text(
                                     "${controller.height} cm",
@@ -147,8 +147,14 @@ class BMICalculatorScreen extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Text("Your Body Mass Index (BMI)"),
-                                    Text("${controller.bmi} kg/m²"),
+                                    const Text("Your Body Mass Index (BMI)",
+                                        style: TextStyle(
+                                            fontSize: AppSizes.fontSizeMd)),
+                                    Text(
+                                      "${controller.bmi} kg/m²",
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
                                   ],
                                 ),
                                 const SizedBox(
@@ -160,8 +166,16 @@ class BMICalculatorScreen extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Text("Height"),
-                                    Text("${controller.heightString} m  "),
+                                    const Text(
+                                      "Height",
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
+                                    Text(
+                                      "${controller.heightString} m  ",
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
                                   ],
                                 ),
                                 const SizedBox(
@@ -172,12 +186,20 @@ class BMICalculatorScreen extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Text("Weight"),
-                                    Text("${controller.weight} kg  "),
+                                    const Text(
+                                      "Weight",
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
+                                    Text(
+                                      "${controller.weight} kg  ",
+                                      style: TextStyle(
+                                          fontSize: AppSizes.fontSizeMd),
+                                    ),
                                   ],
                                 ), //Total Amount
                                 const SizedBox(
-                                  height: AppSizes.spaceBtwSectionsXsm,
+                                  height: AppSizes.spaceBtwSectionsMd,
                                 ),
 
                                 Row(
